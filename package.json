@@ -9,7 +9,8 @@
     "scripts": {
         "build": "./node_modules/.bin/webpack --mode=production",
         "deploy": "storybook-to-ghpages",
-        "start": "npm run storybook"
+        "start": "npm run storybook",
+        "storybook": "start-storybook -p 9001"
     },
     "author": "Ben Shope <ben@benshope.com> (https://github.com/benshope)",
     "keywords": [
