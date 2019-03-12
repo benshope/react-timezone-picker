@@ -1,6 +1,6 @@
 {
     "name": "react-timezone-picker",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "description": "React Modal Hook",
     "main": "dist/index.js",
     "files": [
@@ -8,10 +8,9 @@
     ],
     "scripts": {
         "build": "./node_modules/.bin/webpack --mode=production",
-        "deploy": "build-storybook -o docs && storybook-to-ghpages",
+        "deploy": "storybook-to-ghpages",
         "start": "npm run storybook",
-        "storybook": "start-storybook -p 9001",
-        "test": "jest"
+        "storybook": "start-storybook -p 9001"
     },
     "author": "Ben Shope <ben@benshope.com> (https://github.com/benshope)",
     "keywords": [
@@ -56,7 +55,6 @@
         "prettier": "1.16.4",
         "react": "^16.8",
         "react-dom": "^16.8",
-        "uglifyjs-webpack-plugin": "^2.1.2",
         "webpack-cli": "^3.2.3",
         "webpack-node-externals": "^1.7.2"
     },
