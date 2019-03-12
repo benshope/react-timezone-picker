@@ -1,0 +1,95 @@
+{
+    "name": "react-timezone-picker",
+    "version": "1.0.0",
+    "description": "React Modal Hook",
+    "main": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "./node_modules/.bin/webpack --mode=production",
+        "deploy": "build-storybook -o docs && storybook-to-ghpages",
+        "start": "npm run storybook",
+        "storybook": "start-storybook -p 9001",
+        "test": "jest"
+    },
+    "author": "Ben Shope <ben@benshope.com> (https://github.com/benshope)",
+    "keywords": [
+        "modal",
+        "react",
+        "ui",
+        "hooks",
+        "hook",
+        "react-hooks",
+        "small",
+        "simple"
+    ],
+    "license": "MIT",
+    "dependencies": {},
+    "peerDependencies": {
+        "react": "^16.8.0-alpha.0",
+        "react-dom": "^16.8.0-alpha.0"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "browserslist": "last 2 versions",
+    "devDependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "@storybook/addon-a11y": "^5",
+        "@storybook/addon-actions": "^5",
+        "@storybook/addon-info": "^5",
+        "@storybook/addon-options": "^5",
+        "@storybook/addon-storyshots": "^5",
+        "@storybook/react": "^5",
+        "@storybook/storybook-deployer": "^2.8.1",
+        "babel-cli": "^6.26.0",
+        "eslint": "^5.15.1",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-plugin-import": "^2.16.0",
+        "eslint-plugin-jsx-a11y": "^6.2.1",
+        "eslint-plugin-react": "^7.12.4",
+        "prettier": "1.16.4",
+        "react": "^16.8",
+        "react-dom": "^16.8",
+        "uglifyjs-webpack-plugin": "^2.1.2",
+        "webpack-cli": "^3.2.3",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "esLintConfig": {
+        "env": {
+            "browser": true,
+            "commonjs": true,
+            "es6": true
+        },
+        "extends": "airbnb",
+        "globals": {
+            "Atomics": "readonly",
+            "SharedArrayBuffer": "readonly"
+        },
+        "parserOptions": {
+            "ecmaFeatures": {
+                "jsx": true
+            },
+            "ecmaVersion": 2018
+        },
+        "plugins": [
+            "react"
+        ],
+        "rules": {}
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
+}
