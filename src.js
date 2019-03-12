@@ -391,10 +391,10 @@ const zones = [
     return 0
 })
 
-const TimezonePicker = props => {
+const TimezonePicker = ({ unselectLabel, ...props }) => {
     return (
         <select {...props}>
-            <option key="unset">Viewer's Local Timezone</option>
+            {unselectLabel && <option key="unset">{unselectLabel}</option>}
             {zones.map(timezone => (
                 <option key={timezone} value={timezone}>
                     {timezone}
