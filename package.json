@@ -23,9 +23,7 @@
         "simple"
     ],
     "license": "MIT",
-    "dependencies": {
-        "storybook": "^1.0.0"
-    },
+    "dependencies": {},
     "peerDependencies": {
         "react": "^16.8",
         "react-dom": "^16.8"
