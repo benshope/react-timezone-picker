@@ -13,7 +13,14 @@ const stories = storiesOf('Timezone Picker', module)
         return (
             <TimezonePicker
                 onChange={action('onChange')}
-                style={{ border: '2px solid black' }}
+                style={{
+                    background: 'black',
+                    color: 'white',
+                    border: '10px solid black',
+                    borderRightWidth: '20px',
+                    fontSize: '1.5rem',
+                    lineHeight: '1.5rem',
+                }}
             />
         )
     })

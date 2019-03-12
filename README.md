@@ -36,7 +36,11 @@ const MyComponent() => {
                 onChange={console.log}
                 defaultValue={'America/New_York'}
                 unselectLabel="No Timezone"
-                style={{border: '2px solid black'}}
+                style={{
+                    borderRadius: '0.5rem',
+                    background: 'teal',
+                    color: 'white',
+                }}
             />
         )
     })
@@ -52,7 +56,7 @@ Customize timezone picker by passing these, or any other props valid on the `<se
 | defaultValue  | the value the timezone picker is initially set to                                                  |
 | value         | pass a value into the picker making it a controlled component                                      |
 | unselectLabel | the label for selecting undefined (the undefined option does not appear without a label specified) |
-| style         | the portal target - usually `document.body`                                                        |
+| style         | styles for the <select> element                                                                    |
 
 See the [examples](https://benshope.github.io/react-timezone-picker) and the [examples source code](https://github.com/benshope/react-timezone-picker/blob/master/stories.js) for more snippets to copy.
 
