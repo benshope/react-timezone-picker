@@ -3,6 +3,8 @@
 ![gzip size](http://img.badgesize.io/https://unpkg.com/react-timezone-picker/dist/index.js?compression=gzip)
 [![npm version](https://img.shields.io/npm/v/react-timezone-picker.svg)](https://www.npmjs.com/package/react-timezone-picker)
 [![npm downloads](https://img.shields.io/npm/dm/react-timezone-picker.svg)](https://www.npmjs.com/package/react-timezone-picker)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://en.wikipedia.org/wiki/MIT_License)
+
 
 This is a React component for selecting a timezone. The implementation is one file, it can be styled, and it has no dependencies.
 
